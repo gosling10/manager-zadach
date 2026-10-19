@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Менеджер задач</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/js1.js" defer></script>
+</head>
+<body>
+<form id="todoForm" class="create-task-block">
+    <h3>Создание задачи</h3>
+    <label for="taskText">Текст задачи</label>
+    <input type="text" id="taskText" required>
+    <div style="margin: 10px 0; display: flex; align-items: center; gap: 5px;">
+        <input type="checkbox" id="taskImmediate">
+        <label for="taskImmediate" style="display:inline; user-select: none;">Срочная задача</label>
+    </div>
+    <button type="submit">Добавить задачу</button>
+</form>
+    <div class="controls-panel">
+        <button id="btn1">Сортировать по имени ↓А Я</button>
+        <button id="btn2">Сортировать по имени ↓Я А</button>
+        <button id="btn3">Оставить только срочные</button>
+        <input type="text" id="searchInput" placeholder="Введите текст задачи">
+        <button id="btn4">Фильтровать по имени</button>
+        <button id="btn5">Сбросить</button>
+    </div>
+    <div class="tasks-container">
+        <div class="task"><span>первая задача</span></div>
+        <div class="task immediate"><span>вторая задача</span> <span class="vaznoe">!</span></div>
+        <div class="task immediate"><span>третья задача</span> <span class="vaznoe">!</span></div>
+        <div class="task"><span>четвертая задача</span></div>
+    </div>
+</body>
+</html>
